@@ -1,0 +1,28 @@
+ #navbar{
+
+     bottom:40px;
+     background-color:#5f5484;
+     display: flex;
+     flex-direction: column;
+     width: 20vw;
+     height: 100vh;
+ }
+ #topQ{
+     height: 25%;
+     width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #middleQ{
+     height: 50%;
+   font-size:40px;
+ }
+ #bottomQ{
+     height: 25%;
+ }
+
+ .headshot {
+     height: 200px;
+     width: 200px;
+ }
