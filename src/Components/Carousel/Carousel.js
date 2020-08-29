@@ -1,24 +1,17 @@
 import React, { useState } from 'react'
 import Carousel from 'react-simply-carousel'
+import Modal from '../Model/Modal';
 import './Carousel.css'
-
 
 const MyCarousel = (props) => {
     const [activeSlide, setActiveSlide] = useState(0)
-    //console.log(props.albums.images[1].url)
+    //console.log(props.albums.images[1].url
 
+    let photos = [{ photo: './assets/bangkok.jpg', link: 'https://github.com/Most-Basic33' , content: 'Here I used Socket.io to build a functioning chat room where users can engage each other in conversation or share music that they themselves created'}, 
+    { photo: './assets/keywest.jpg', link: 'https://github.com/Most-Basic33', content:'Here I used hashing to ensure that the client has a secure connect with a safe hashed password. Using Node.Js with Express I was able to validate a user and retrieve their pertinate information '}, 
+    { photo: './assets/bishopPhoto.jpg', link: 'https://github.com/Most-Basic33', content:'Being one of the most beautiful people in the world Bishop has focused on sharing his beauty with humanity as a gesture of his infinate passion and humilatity' }, 
+    { photo: './assets/wifey.jpg', link: 'https://github.com/Most-Basic33', content: `Being from Russia this beautiful snow bunny enjoys cold slopes and clear vodak, just don't ask her to spit!` }]
 
-
-    let photos = ['./assets/bangkok.jpg', './assets/keywest.jpg', './assets/bishopPhoto.jpg', './assets/wifey.jpg']
-
-    // let mappedPhotos = photos.map((pic, index) => {
-    //     //  console.log(pic)
-    //     return <img className='mapped' style={{ display: "flex", justifyContent: "center", height: "250px", width: "250px", marginLeft: '15px' }} src={pic} alt='family' />
-    // })
-
-
-
-    //console.log(mapped)
     return (
         <div id='carry' >
             <Carousel
@@ -66,15 +59,13 @@ const MyCarousel = (props) => {
             >
                 {photos.map((item, index) => (
                     <div key={index} >
-                        <img style={{
-                            width: 175,
-                            height: 200,
-                            textAlign: "center",
-                            boxSizing: "border-box",
-                            margin:10
-                        }} src={item} alt='family'/>                        
+                        <Modal
+                        link={item.link}
+                        image={item.photo}
+                        content={item.content}
+                        />
                     </div>
-                ))}  
+                ))}
 
             </Carousel>
         </div>
