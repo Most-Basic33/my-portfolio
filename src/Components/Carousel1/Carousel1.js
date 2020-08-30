@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import Carousel from 'react-simply-carousel'
 // import './Carousel1.css'
- 
+import Modal from '../Model/Modal' 
+
 const MyCarousel1 = (props) => {
     const [activeSlide, setActiveSlide] = useState(0)
     //console.log(props.albums.images[1].url
 
-    let photos = [{photo: './assets/sharifyLogin.png', link: 'http://64.227.104.65:3333/'}, {photo: './assets/chat.png', link: 'http://64.227.104.65:3333/Chat'}, {photo: './assets/bishopPhoto.jpg', link: 'https://github.com/Most-Basic33'}, {photo: './assets/audio.png', link: 'http://64.227.104.65:3333/Chat'}]
+    let photos = [{id:1, photo: './assets/sharifyLogin.png', link: 'http://64.227.104.65:3333/'}, {id:2, photo: './assets/chat.png', link: 'http://64.227.104.65:3333/Chat'}, { id:3, photo: './assets/bishopPhoto.jpg', link: 'https://github.com/Most-Basic33'}, {photo: './assets/audio.png', link: 'http://64.227.104.65:3333/Chat'}]
 
     return (
         <div id='carry' >
@@ -55,8 +56,19 @@ const MyCarousel1 = (props) => {
             >
                 {photos.map((item, index) => (
                     <div key={index}>
-                   
-                       <a href={item.link}>
+                   <Modal
+                    modalOpen={props.modalOpen}
+                setModal={props.setModal}
+                modal={props.modal}
+                modalId={props.modali}
+
+
+                        id={item.id}
+                        link={item.link}
+                        image={item.photo}
+                        content={item.content}
+                    />
+                       {/* <a href={item.link}>
                         <img 
                         style={{
                             width: 175,
@@ -68,7 +80,7 @@ const MyCarousel1 = (props) => {
                         src={item.photo} 
                         alt='family'/>                        
                        </a>
-                      
+                       */}
                        
                     </div>
                 ))}  
