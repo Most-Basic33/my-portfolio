@@ -42,12 +42,14 @@ const ModalComp = (props) => {
                     </div>
 
                     <div className='modal-image'>
-                    <img style={{
+                  
+               <a href={props.link}><img style={{
                         width: 150,
                         border:5,
                          height: 150}}
                         alt='test' 
-                        src={props.image}/>
+                       src={props.image}/> </a>
+                       
                     </div>
                     </div>
                 <h4>{props.content}</h4>
