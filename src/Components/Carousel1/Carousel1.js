@@ -7,7 +7,7 @@ const MyCarousel1 = (props) => {
     const [activeSlide, setActiveSlide] = useState(0)
     //console.log(props.albums.images[1].url
 
-    let photos = [{id:1, photo: './assets/sharifyLogin.png', link: 'http://64.227.104.65:3333/'}, {id:2, photo: './assets/chat.png', link: 'http://64.227.104.65:3333/Chat'}, { id:3, photo: './assets/bishopPhoto.jpg', link: 'https://github.com/Most-Basic33'}, {photo: './assets/audio.png', link: 'http://64.227.104.65:3333/Chat'}]
+    let photos = [{id:1, photo: './assets/sharifyLogin.png', link: 'http://64.227.104.65:3333/', content: 'The technology used to do authentication for this project was BCrypt.JS. I used my Postgres database to store the hash value of the users password for security. The system is set up to login and register users and very importantly to not allow duplicate information. The application is setup with middleware for detecting privillages and allowing for a person with Admin rights to have full C-R-U-D througout the application. Admin users can Add and Delete Properties, Persons, and update details about a house such as price and if it is availble.    '}, {id:2, photo: './assets/chat.png', link: 'http://64.227.104.65:3333/Chat'}, { id:3, photo: './assets/bishopPhoto.jpg', link: 'https://github.com/Most-Basic33'}, {photo: './assets/audio.png', link: 'http://64.227.104.65:3333/Chat'}]
 
     return (
         <div id='carry' >

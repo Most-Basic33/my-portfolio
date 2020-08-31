@@ -1,0 +1,6 @@
+.button-and-image {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+}

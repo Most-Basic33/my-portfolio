@@ -15,6 +15,7 @@ const ModalComp = (props) => {
     // }, [props.id])
 
     function close() {
+        console.log('welllll')
         setOpen(!open)
     }
 
@@ -32,16 +33,23 @@ const ModalComp = (props) => {
                 }}>
                
                 <div className='modal'>
+                    <div className='button-and-image'>
+                    <div className='modal-button'>
                     <button onClick={(e) =>{console.log('hit', e.target); close() }}>X</button>
+                    </div>
+
+                    <div className='modal-image'>
                     <img style={{
                         width: 150,
                         border:5,
                          height: 150}}
                         alt='test' 
                         src={props.image}/>
+                    </div>
+                    </div>
                 <h4>{props.content}</h4>
                 <div onClick={close} > 
-                <button onClick={(e) =>{console.log('hit', e.target); close() }}>X</button>
+                <button onClick={() => close()}>CLICK ME</button>
                 </div>
 
                 
