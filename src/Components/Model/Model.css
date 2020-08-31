@@ -1,6 +1,17 @@
 .button-and-image {
   width: 100vw;
-  height: 20vh;
+  height: 70vh;
   display: flex;
   justify-content: space-evenly;
+}
+#modaled{
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modal{
+display: flex;
+flex-direction: column;
+height: 100%;
+ 
 }

@@ -21,7 +21,7 @@ const ModalComp = (props) => {
 
     // console.log(props)
     return (
-        <div >
+        <div id='modaled'>
             <ImageHolder  setOpen={setOpen} image={props.image} link={props.link} id={props.id} />
             <Modal
                 isOpen={open}
@@ -44,7 +44,7 @@ const ModalComp = (props) => {
                     <div className='modal-image'>
                   
                <a href={props.link}><img style={{
-                        width: 500,
+                        width: 750,
                         border:5,
                          height: 500}}
                         alt='test' 

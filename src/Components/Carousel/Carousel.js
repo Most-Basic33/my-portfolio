@@ -21,6 +21,9 @@ const MyCarousel = (props) => {
 
     return (
         <div id='carry' >
+        <aside className='info'>
+
+     
         <p>
         Homefinder was conceived of as a personal project because who doesn't look for a house at some point or another?  I combined several commonly used technologies to build this project. You can Click on the photo's in the carousel to see more about the particular image. 
         </p>
@@ -37,6 +40,7 @@ const MyCarousel = (props) => {
             <li>Express-Session</li>
             <li>React-Router</li>
         </ul>
+        </aside>
             <Carousel
                 containerProps={{
                     style: {
