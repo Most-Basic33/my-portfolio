@@ -60,7 +60,7 @@ const MyCarousel1 = (props) => {
                     modalOpen={props.modalOpen}
                 setModal={props.setModal}
                 modal={props.modal}
-                modalId={props.modali}
+                modalId={props.modalId}
 
 
                         id={item.id}

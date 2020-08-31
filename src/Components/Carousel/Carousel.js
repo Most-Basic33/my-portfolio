@@ -4,8 +4,15 @@ import Modal from '../Model/Modal';
 import './Carousel.css'
 
 const MyCarousel = (props) => {
+
     const [activeSlide, setActiveSlide] = useState(0)
     //console.log(props.albums.images[1].url
+  
+  
+    //test
+  
+//test above 
+
 
     let photos = [{ id:1, photo: './assets/homeLogin.png', link: 'https://github.com/Most-Basic33' , content: 'Here I used Socket.io to build a functioning chat room where users can engage each other in conversation or share music that they themselves created'}, 
     {id:2, photo: './assets/homeMaps.png', link: 'https://github.com/Most-Basic33', content:'Here I used hashing to ensure that the client has a secure connect with a safe hashed password. Using Node.Js with Express I was able to validate a user and retrieve their pertinate information '}, 
@@ -63,15 +70,18 @@ const MyCarousel = (props) => {
                 speed={400}
             >
                 {photos.map((item, index) => (
-                    <div key={index} >
+                    <div key={index} onClick={(e) =>props.setModal(item.id, e)}  >
                  
                         <Modal
 //experimental
                 modalOpen={props.modalOpen}
                 setModal={props.setModal}
                 modal={props.modal}
-                modalId={props.modali}
-
+                modalId={props.modalId}
+//                 editMode={editMode}
+// modalOpen={modalOpen}
+// setModal={setModal}
+// index={index}
 
                         id={item.id}
                         link={item.link}

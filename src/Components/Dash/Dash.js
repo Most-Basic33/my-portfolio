@@ -8,9 +8,27 @@ import Carousel2 from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/
 const Dash = (props) => {
    
     //experimental modal shyt
-    
+    const initalState ={
+        edit:false,
+        modalOpen:false
+    }
+
+const [modalOpen, setModalOpen] = useState(0)
+const [id, setId] = useState('')
+const [edit, setEdit] = useState(initalState)
+
+
+const editMode=(id)=>{
+setEdit(!edit)
+setId(id)
+}
+
+const setModal=(id, e) =>{
+e.stopPropagation()
+setModalOpen(id)
+}
  // const [modalOpen, setModalOpen] = useState(false)
-   const[id,setId] = useState(-1)
+  // const[id,setId] = useState(-1)
      
 
  
@@ -22,14 +40,24 @@ const Dash = (props) => {
             case 0:
                 return <Carousel
                modalId={id}
-                // modal={modalOpen}
-                // modalOpen={setModalOpen}
-                // setModal={setModal}
+              modal={modalOpen}
+                 modalOpen={setModalOpen}
+                setModal={setModal}
                 ></Carousel>
             case 1:
-                return <Carousel1></Carousel1>
+                return <Carousel1>
+                     modalId={id}
+              modal={modalOpen}
+                 modalOpen={setModalOpen}
+                setModal={setModal}
+                </Carousel1>
             case 2:
-                return <Carousel2></Carousel2>
+                return <Carousel2>
+                     modalId={id}
+              modal={modalOpen}
+                 modalOpen={setModalOpen}
+                setModal={setModal}
+                </Carousel2>
         }
     };
 
