@@ -10,11 +10,12 @@ const Nav = (props) => {
                 <img src={`./assets/bishopPhoto.jpg`} alt='headshot' className='headshot' />
             </aside>
             <aside id='middleQ' >
-                <ul>
+                <ul  >
                     
-                    <button onClick={() => props.setChoice(0)}>HomeFinder</button>
-                    <button onClick={() => props.setChoice(1)}>Sharify</button>
-                    <button onClick={() => props.setChoice(2)}>Resume</button>
+                  <button className='navbutt' onClick={() =>props.setChoice(0)} >About Me</button>
+                    <button className='navbutt'  onClick={() => props.setChoice(2)}>Resume</button>
+                    <button className='navbutt' onClick={() => props.setChoice(3)}>HomeFinder</button>
+                    <button className='navbutt'  onClick={() => props.setChoice(1)}>Sharify</button>
                 </ul>
             </aside>
             <aside id='bottomQ'>

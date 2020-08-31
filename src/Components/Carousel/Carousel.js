@@ -21,16 +21,28 @@ const MyCarousel = (props) => {
 
     return (
         <div id='carry' >
-        <p>this is just some test text to view how this owuld look on a page
-        Homefinder was conceived of as a personal project because who doesn't look for 
-        a house at some point or another?  I combined several commonly used technologies to build this project. You can Click on the photo's in the carousel to see more about the particular image.
+        <p>
+        Homefinder was conceived of as a personal project because who doesn't look for a house at some point or another?  I combined several commonly used technologies to build this project. You can Click on the photo's in the carousel to see more about the particular image. 
         </p>
-        <span>This is just some test text to view how this would look on a page</span>
+        <span><b><h2>Tecnologies Used:</h2></b></span>
+        <ul>
+            <li>Chart.Js</li>
+            <li>Authentication/Bcrypt</li>
+            <li>Google Maps Api</li>
+            <li>AWS</li>
+            <li>PostGres SQL</li>
+            <li>Node.Js</li>
+            <li>React-Redux</li>
+            <li>SendGrid/Email</li>
+            <li>Express-Session</li>
+            <li>React-Router</li>
+        </ul>
             <Carousel
                 containerProps={{
                     style: {
                         width: '100%',
                         justifyContent: 'space-evenly'
+                       
                     }
 
                 }}
@@ -92,7 +104,9 @@ const MyCarousel = (props) => {
                 ))}
 
             </Carousel>
-            <p></p>
+            <p className='bott' >
+                <h2>Click On Images to Find Out More</h2>
+            </p>
         </div>
     )
 }

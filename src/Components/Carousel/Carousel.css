@@ -8,3 +8,6 @@
 .mapped {
     margin-left: 10px;
 }
+ul{
+    column-count: 2;
+}

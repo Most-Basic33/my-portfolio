@@ -17,6 +17,10 @@
  #middleQ{
      height: 50%;
    font-size:40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 80%;
  }
  #bottomQ{
      height: 25%;
@@ -25,4 +29,12 @@
  .headshot {
      height: 200px;
      width: 200px;
+ }
+ .navbutt{
+      background-color: #3d2979;
+      color:white;
+      box-shadow: 05px 13px 10px 0px rgba(0,0,0,0.75);
+      font-weight: bold;
+      font-size:15px;
+
  }

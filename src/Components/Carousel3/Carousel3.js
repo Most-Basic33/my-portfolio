@@ -1,16 +1,19 @@
 import React, { useState } from 'react'
 import Carousel from 'react-simply-carousel'
-// import './Carousel1.css'
-import Modal from '../Model/Modal' 
+ 
+import Modal from '../Model/Modal'
 
-const MyCarousel1 = (props) => {
+
+ 
+const MyCarousel2 = (props) => {
     const [activeSlide, setActiveSlide] = useState(0)
     //console.log(props.albums.images[1].url
 
-    let photos = [{id:1, photo: './assets/sharifyLogin.png', link: 'http://64.227.104.65:3333/', content: 'The technology used to do authentication for this project was BCrypt.JS. I used my Postgres database to store the hash value of the users password for security. The system is set up to login and register users and very importantly to not allow duplicate information. The application is setup with middleware for detecting privillages and allowing for a person with Admin rights to have full C-R-U-D througout the application. Admin users can Add and Delete Properties, Persons, and update details about a house such as price and if it is availble.    '}, {id:2, photo: './assets/chat.png', link: 'http://64.227.104.65:3333/Chat'}, { id:3, photo: './assets/chart.png', link: 'https://github.com/Most-Basic33'}, {id:4, photo: './assets/audio.png', link: 'http://64.227.104.65:3333/Chat'}]
-
+    let photos = [{photo: './assets/wifey.jpg', link: 'https://devmountain.com/', content:''  }, {photo: './assets/sisters.jpg', link: 'https://github.com/Most-Basic33'}, {photo: './assets/pet.jpg', link: 'https://www.linkedin.com/in/bishop-walker-3201921b1/'}, {photo: './assets/workStation.jpg', link: 'https://drive.google.com/file/d/19bEcKW9Dfr3_vl5ynqV2ZZww3P9yxvXE/view?usp=sharing'}]
+ 
     return (
         <div id='carry' >
+        <h1>About Me</h1>
             <Carousel
                 containerProps={{
                     style: {
@@ -57,19 +60,20 @@ const MyCarousel1 = (props) => {
                 {photos.map((item, index) => (
                     <div key={index}>
                    <Modal
-                    modalOpen={props.modalOpen}
+                     modalOpen={props.modalOpen}
                 setModal={props.setModal}
                 modal={props.modal}
-                modalId={props.modalId}
+                    modalId={()=>{console.log(props.modalId)},  props.modalId}
 
 
                         id={item.id}
                         link={item.link}
                         image={item.photo}
                         content={item.content}
+                   
                     />
-                      
-                    </div>
+                    
+                    </div>  
                 ))}  
 
             </Carousel>
@@ -80,4 +84,4 @@ const MyCarousel1 = (props) => {
     )
 }
 
-export default MyCarousel1;
+export default MyCarousel2;

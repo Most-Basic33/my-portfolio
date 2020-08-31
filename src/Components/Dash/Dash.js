@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Carousel from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/Components/Carousel/Carousel.js'
 import Carousel1 from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/Components/Carousel1/Carousel1.js'
 import Carousel2 from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/Components/Carousel2/Carousel2.js'
+import Carousel3 from '../Carousel3/Carousel3'
 
 //import ModalComp from '../Model/Modal'
 
@@ -37,7 +38,7 @@ setModalOpen(id)
 
     function switcher() {
         switch (props.choice) {
-            case 0:
+            case 3:
                 return <Carousel
                modalId={id}
               modal={modalOpen}
@@ -58,6 +59,13 @@ setModalOpen(id)
                  modalOpen={setModalOpen}
                 setModal={setModal}
                 </Carousel2>
+               case 0:
+                   return <Carousel3>
+ modalId={id}
+              modal={modalOpen}
+                 modalOpen={setModalOpen}
+                setModal={setModal}
+                   </Carousel3>
         }
     };
 
