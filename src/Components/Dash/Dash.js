@@ -3,19 +3,16 @@ import Carousel from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/C
 import Carousel1 from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/Components/Carousel1/Carousel1.js'
 import Carousel2 from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/Components/Carousel2/Carousel2.js'
 
-import ModalComp from '../Model/Modal'
+//import ModalComp from '../Model/Modal'
 
 const Dash = (props) => {
    
     //experimental modal shyt
     
-  const [modalOpen, setModalOpen] = useState(false)
+ // const [modalOpen, setModalOpen] = useState(false)
    const[id,setId] = useState(-1)
      
-// const setModal =(id, e) =>{
-// e.stopPropagation()
-// setModalOpen()
-// }
+
  
 
 

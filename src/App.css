@@ -23,7 +23,7 @@ width: 20vw;
 align-self: start;
 }
 #vw60{
- align-self: center;
+ align-self: flex-start;
  justify-content: center;
 width: 60vw;
 top:0;
