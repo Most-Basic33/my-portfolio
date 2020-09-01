@@ -19,18 +19,12 @@ const [id, setId] = useState('')
 const [edit, setEdit] = useState(initalState)
 
 
-const editMode=(id)=>{
-setEdit(!edit)
-setId(id)
-}
-
+ 
 const setModal=(id, e) =>{
 e.stopPropagation()
 setModalOpen(id)
 }
- // const [modalOpen, setModalOpen] = useState(false)
-  // const[id,setId] = useState(-1)
-     
+ 
 
  
 
