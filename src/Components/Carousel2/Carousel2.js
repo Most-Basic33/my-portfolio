@@ -14,7 +14,7 @@ const MyCarousel2 = (props) => {
     const [activeSlide, setActiveSlide] = useState(0)
     //console.log(props.albums.images[1].url
 
-    let photos = [{photo: dev, link: 'https://devmountain.com/', content: Text[0]}, {photo: github, link: 'https://github.com/Most-Basic33', content: Text[1]}, {photo: linkedin, link: 'https://www.linkedin.com/in/bishop-walker-3201921b1/', content: Text[2]}, {photo: resume, link: 'https://drive.google.com/file/d/19bEcKW9Dfr3_vl5ynqV2ZZww3P9yxvXE/view?usp=sharing', content: Text[3]}]
+    let photos = [{id:1, photo: dev, link: 'https://devmountain.com/', content: Text[0]}, {id:2, photo: github, link: 'https://github.com/Most-Basic33', content: Text[1]}, {pid:3, hoto: linkedin, link: 'https://www.linkedin.com/in/bishop-walker-3201921b1/', content: Text[2]}, {id:4, photo: resume, link: 'https://drive.google.com/file/d/19bEcKW9Dfr3_vl5ynqV2ZZww3P9yxvXE/view?usp=sharing', content: Text[3]}]
  
     return (
         <div id='carry' >

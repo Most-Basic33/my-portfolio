@@ -20,11 +20,11 @@ const Dash = (props) => {
 
 
 
-    const setModal = (id, e) => {
-        e.stopPropagation()
-        console.log(id)
-        setModalOpen(id)
-    }
+    // const setModal = (id, e) => {
+    //     e.stopPropagation()
+    //     console.log(id)
+    //     setModalOpen(id)
+    // }
 
 
 
@@ -38,28 +38,28 @@ const Dash = (props) => {
                     modalId={id}
                     modal={modalOpen}
                     modalOpen={setModalOpen}
-                    setModal={setModal}
+                    // setModal={setModal}
                 ></Carousel>
             case 1:
                 return <Carousel1>
                     modalId={id}
               modal={modalOpen}
                  modalOpen={setModalOpen}
-                setModal={setModal}
+                {/* setModal={setModal} */}
                 </Carousel1>
             case 2:
                 return <Carousel2>
                     modalId={id}
               modal={modalOpen}
                  modalOpen={setModalOpen}
-                setModal={setModal}
+                {/* setModal={setModal} */}
                 </Carousel2>
             case 0:
                 return <Carousel3>
                     modalId={id}
               modal={modalOpen}
                  modalOpen={setModalOpen}
-                setModal={setModal}
+                {/* setModal={setModal} */}
                 </Carousel3>
         }
     };

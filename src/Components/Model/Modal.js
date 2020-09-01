@@ -26,8 +26,8 @@ const ModalComp = (props) => {
             <Modal
                 isOpen={open}
                 // isOpen={props.id === props.modalOpen}
-                onRequestClose={(e) =>{ close();console.log('hit', e.target)}}
-                onRequestClose={()=> props.setModal(0)}
+                 onRequestClose={(e) =>{ close();console.log('hit', e.target)}}
+                // onRequestClose={()=> props.setModal(0)}
                 style={{
                     overLay: {
                         backgroundColor: '#ac6291'

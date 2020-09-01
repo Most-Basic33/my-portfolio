@@ -13,9 +13,9 @@ const Nav = (props) => {
                 <ul  id='ull' >
                     
                   <button className='navbutt' onClick={() =>props.setChoice(0)} >About Me</button>
-                    <button className='navbutt'  onClick={() => props.setChoice(2)}>Resume</button>
                     <button className='navbutt' onClick={() => props.setChoice(3)}>HomeFinder</button>
                     <button className='navbutt'  onClick={() => props.setChoice(1)}>Sharify</button>
+                    <button className='navbutt'  onClick={() => props.setChoice(2)}>Resume</button>
                 </ul>
             </aside>
             <aside id='bottomQ'>
