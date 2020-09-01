@@ -91,23 +91,21 @@ const MyCarousel = (props) => {
                 speed={400}
             >
                 {photos.map((item, index) => (
-                    <div key={index} onClick={(e) => props.setModal(item.id, e)}  >
+                    <div key={index} >
 
                         <Modal
                             //experimental
                             modalOpen={props.modalOpen}
-                            setModal={props.setModal}
-                            modal={props.modal}
-                            modalId={props.modalId}
-                            //                 editMode={editMode}
-                            // modalOpen={modalOpen}
-                            // setModal={setModal}
-                            // index={index}
+                setModal={props.setModal}
+                modal={props.modal}
+                    modalId={()=>{console.log(props.modalId)},  props.modalId}
 
-                            id={item.id}
-                            link={item.link}
-                            image={item.photo}
-                            content={item.content}
+
+                        id={item.id}
+                        link={item.link}
+                        image={item.photo}
+                        content={item.content}
+                   
                         />
                     </div>
                 ))}
