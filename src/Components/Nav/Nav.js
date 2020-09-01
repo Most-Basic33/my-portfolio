@@ -10,7 +10,7 @@ const Nav = (props) => {
                 <img src={bishop} alt='headshot' className='headshot' />
             </aside>
             <aside id='middleQ' >
-                <ul  >
+                <ul  id='ull' >
                     
                   <button className='navbutt' onClick={() =>props.setChoice(0)} >About Me</button>
                     <button className='navbutt'  onClick={() => props.setChoice(2)}>Resume</button>
