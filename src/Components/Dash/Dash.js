@@ -7,26 +7,27 @@ import Carousel3 from '../Carousel3/Carousel3'
 //import ModalComp from '../Model/Modal'
 
 const Dash = (props) => {
-   
+
     //experimental modal shyt
-    const initalState ={
-        edit:false,
-        modalOpen:false
+    const initalState = {
+        edit: false,
+        modalOpen: false
     }
 
-const [modalOpen, setModalOpen] = useState(0)
-const [id, setId] = useState('')
-const [edit, setEdit] = useState(initalState)
+    const [modalOpen, setModalOpen] = useState(0)
+    const [id, setId] = useState('')
+    const [edit, setEdit] = useState(initalState)
 
 
- 
-const setModal=(id, e) =>{
-e.stopPropagation()
-setModalOpen(id)
-}
- 
 
- 
+    const setModal = (id, e) => {
+        e.stopPropagation()
+        console.log(id)
+        setModalOpen(id)
+    }
+
+
+
 
 
 
@@ -34,32 +35,32 @@ setModalOpen(id)
         switch (props.choice) {
             case 3:
                 return <Carousel
-               modalId={id}
-              modal={modalOpen}
-                 modalOpen={setModalOpen}
-                setModal={setModal}
+                    modalId={id}
+                    modal={modalOpen}
+                    modalOpen={setModalOpen}
+                    setModal={setModal}
                 ></Carousel>
             case 1:
                 return <Carousel1>
-                     modalId={id}
+                    modalId={id}
               modal={modalOpen}
                  modalOpen={setModalOpen}
                 setModal={setModal}
                 </Carousel1>
             case 2:
                 return <Carousel2>
-                     modalId={id}
+                    modalId={id}
               modal={modalOpen}
                  modalOpen={setModalOpen}
                 setModal={setModal}
                 </Carousel2>
-               case 0:
-                   return <Carousel3>
- modalId={id}
+            case 0:
+                return <Carousel3>
+                    modalId={id}
               modal={modalOpen}
                  modalOpen={setModalOpen}
                 setModal={setModal}
-                   </Carousel3>
+                </Carousel3>
         }
     };
 

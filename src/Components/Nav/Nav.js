@@ -1,13 +1,13 @@
 import React from 'react'
 import './Nav.css';
 import { Link, withRouter } from 'react-router-dom'
-
+import bishop from './bishopPhoto.jpg'
 const Nav = (props) => {
     
     return (
         <div id='navbar' >
             <aside id='topQ' >
-                <img src={`./assets/bishopPhoto.jpg`} alt='headshot' className='headshot' />
+                <img src={bishop} alt='headshot' className='headshot' />
             </aside>
             <aside id='middleQ' >
                 <ul  >
