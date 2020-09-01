@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Carousel from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/Components/Carousel/Carousel.js'
-import Carousel1 from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/Components/Carousel1/Carousel1.js'
-import Carousel2 from '/Users/bishopwalker/Desktop/DevMountain/my-portfolio/src/Components/Carousel2/Carousel2.js'
 import Carousel3 from '../Carousel3/Carousel3'
+import Carousel2 from '../Carousel2/Carousel2'
+import Carousel1 from '../Carousel1/Carousel1'
+import Carousel from '../Carousel/Carousel'
 
 //import ModalComp from '../Model/Modal'
 

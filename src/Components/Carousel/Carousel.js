@@ -6,7 +6,7 @@ import dash from './dash.png'
 import home from './homeCasino.png'
 import homeLogin from './homeLogin.png'
 import homeMap from './homeMaps.png'
-
+import Text from '../Text/Text1'
 
 const MyCarousel = (props) => {
 
