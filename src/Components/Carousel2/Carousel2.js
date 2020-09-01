@@ -11,9 +11,8 @@ const MyCarousel2 = (props) => {
     const [activeSlide, setActiveSlide] = useState(0)
     //console.log(props.albums.images[1].url
 
-    let photos = [{photo: './assets/devMountain.png', link: 'https://devmountain.com/', content: Text3[0]}, {photo: './assets/github.png', link: 'https://github.com/Most-Basic33'}, {photo: './assets/linkedin.png', link: 'https://www.linkedin.com/in/bishop-walker-3201921b1/'}, {photo: './assets/resume.png', link: 'https://drive.google.com/file/d/19bEcKW9Dfr3_vl5ynqV2ZZww3P9yxvXE/view?usp=sharing'}]
-// console.log(Text3[0])
-// console.log(Text3[1])
+    let photos = [{photo: './assets/devMountain.png', link: 'https://devmountain.com/', content: Text3[0]}, {photo: './assets/github.png', link: 'https://github.com/Most-Basic33', content: Text3[1]}, {photo: './assets/linkedin.png', link: 'https://www.linkedin.com/in/bishop-walker-3201921b1/', content: Text3[2]}, {photo: './assets/resume.png', link: 'https://drive.google.com/file/d/19bEcKW9Dfr3_vl5ynqV2ZZww3P9yxvXE/view?usp=sharing'}]
+ 
     return (
         <div id='carry' >
             <Carousel
@@ -80,7 +79,7 @@ const MyCarousel2 = (props) => {
 
             </Carousel>
             <div className='bott' >
-                <h2>Click On Images to Find Out More</h2>
+                <h2>Click On Images to Find Out More!</h2>
             </div>
         </div>
     )

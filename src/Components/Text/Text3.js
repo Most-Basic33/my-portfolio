@@ -5,7 +5,8 @@ const content = [
     The next several weeks we focused on learning React.js. We started with learning component lift cycle methods and basic debugging. Then we learned about https, rest, crud axios and the difference between Synchronous/Asynchronous code. The lessons then combined React with Node.js. We learned how express works and how it connects with endpoints and axios. We learned about node package mananger and my favorite Yarn. We created severs and our own API's. After that the school focused on controllers, middleware and how to work PostMan to check endpoints.
     After the first month the students that sucesfully made it were taught media queries, animations and transitions, before I was asked to complete my first project. This can be found on ${<a href='https://github.com/Most-Basic33/shelfiev'> Github</a>} 
     `, 
-    'This is the second one I want to grab'
+    `This in my opinion is one of the most usual applications, program? I dunno which one, but wow is this thing useful. I haven't personally had my current computer fail but I have seen other classmates of mine loose days of work because they weren't using github. Honestly I lost a few projects that are just buried on one of my computers from freshman or sophmore java, but I couldn't find that now. Too bad because if I had samples of my java code maybe I could get a junior java developer role:-)`,
+    `I once read somewhere that, "If you're not NETWORKING, you're NOT-WORKING" Well I want to work so I've been trying to build my network a little each day. I'll be honest with you, I don't do much but connect with people and apply for jobs but I hope one day I can become an influencer. Until then add me, or is it connect with me?`
 ]
 
  

@@ -10,7 +10,7 @@ const MyCarousel2 = (props) => {
     const [activeSlide, setActiveSlide] = useState(0)
     //console.log(props.albums.images[1].url
 
-    let photos = [{photo: './assets/wifey.jpg', link: 'https://devmountain.com/', content:''  }, {photo: './assets/sisters.jpg', link: 'https://github.com/Most-Basic33'}, {photo: './assets/pet.jpg', link: 'https://www.linkedin.com/in/bishop-walker-3201921b1/'}, {photo: './assets/workStation.jpg', link: 'https://drive.google.com/file/d/19bEcKW9Dfr3_vl5ynqV2ZZww3P9yxvXE/view?usp=sharing'}]
+    let photos = [{photo: './assets/wifey.jpg', link: 'https://devmountain.com/', content:`My beautiful wife and I have been together for 5 years now. She is from Ukraine and one of my favorite things about her is her accent. She's just so smart and intellegent and beautiful, I'm truely one of the luckest men alive. `  }, {photo: './assets/sisters.jpg', link: 'https://github.com/Most-Basic33', content:`My Mother, her Mother, some of her sisters and my daughter. Pittsburgh, Pa's most beautiful women. `}, {photo: './assets/pet.jpg', link: 'https://www.linkedin.com/in/bishop-walker-3201921b1/', content:`My two year old 130 pound protector. The women in my life mean more to me then the world, so of course I'd have something to protect them. #protectmyfamily`}, {photo: './assets/workStation.jpg', link: 'https://drive.google.com/file/d/19bEcKW9Dfr3_vl5ynqV2ZZww3P9yxvXE/view?usp=sharing', content:`This is my favorite place to relax in my house. In front of the computer I feel like I belong. I can think of no better way to support my family then to do something I enjoy doing for free.`},{photo: './assets/daughter.jpg', link: '', content:`Speaking of beautiful women in my life, my beautiful wife blessed me with this bundle of joy. Every single day gets better with her, and I'm just so i'm love!`} ]
  
     return (
         <div id='carry' >
@@ -87,7 +87,7 @@ const MyCarousel2 = (props) => {
 
             </Carousel>
             <div className='bott' >
-                <h2>Click On Images to Find Out More</h2>
+                <h2>Click On Images to Find Out More!</h2>
             </div>
         </div>
     )
