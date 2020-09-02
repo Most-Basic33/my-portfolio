@@ -28,7 +28,7 @@ const ModalComp = (props) => {
                 // isOpen={props.id === props.modalOpen}
                 contentLabel='Modaled photos of applications I built'
                  onRequestClose={(e) =>{ close();console.log('hit', e.target)}}
-                // onRequestClose={()=> props.setModal(0)}
+               
                 style={{
                     overLay: {
                         backgroundColor: '#ac6291'
@@ -36,26 +36,25 @@ const ModalComp = (props) => {
                 }}>
                
                 <div className='modal'>
+                    <button onClick={(e) =>{console.log('hit', e.target); close() }}>X</button>
                     <div className='button-and-image'>
                     <div className='modal-button'>
-                    <button onClick={(e) =>{console.log('hit', e.target); close() }}>X</button>
                     {/* <button onClick={(e)=> props.setModal(-1, e) } >Close</button> */}
                     </div>
 
                     <div className='modal-image'>
                   
-               <a href={props.link}><img style={{
-                        width: 750,
-                        border:5,
-                         height: 500}}
+               <a href={props.link}><img id='pic' style={{
+                        
+                         }}
                         alt='test' 
                        src={props.image}/> </a>
                        
-                    </div>
-                    </div>
-                <h4>{props.content}</h4>
-                {/* <button onClick={(e)=> props.setModal(-1, e) } >Close</button> */}
+               <p id='wrap' > <b>{props.content}</b></p>
                 <button onClick={() => close()}>CLICK ME</button>
+                    </div>
+                    </div>
+                
                 </div>
 
                 
