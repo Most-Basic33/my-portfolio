@@ -16,7 +16,7 @@ const ModalComp = (props) => {
 
     function close() {
         console.log('welllll')
-        setOpen(false)
+        setOpen(false)//!open
     }
 
     // console.log(props)
