@@ -60,7 +60,7 @@ const customStyles = {
                        src={props.image}/> </a>
                        
                <p id='wrap' > <b>{props.content}</b></p>
-                <button onClick={() => close()}>CLICK ME</button>
+                <button onClick={() => close()}>CLOSE</button>
                     </div>
                     </div>
                 

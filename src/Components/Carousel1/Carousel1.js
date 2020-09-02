@@ -100,7 +100,7 @@ const MyCarousel1 = (props) => {
             <div className='bott' >
                 <h4>Click On Images to Find Out More!</h4>
             </div>
-            <p>This App was conceived of as a group project at DevMountain. My team and I wanted a way for users to be able to share music that they created while using their Spotify profile. My foucus was on the chat, audio, and Data aspects. Users can upload their music to their profiles. I utilized Amazon Web Services to save space and allow users to join a chat room with friends and share their songs. I created a way to count plays so everytime some listens to a track the play count increases and those songs are ranked on the chart.</p>
+            <p className='info'>This App was conceived of as a group project at DevMountain. My team and I wanted a way for users to be able to share music that they created while using their Spotify profile. My foucus was on the chat, audio, and Data aspects. Users can upload their music to their profiles. I utilized Amazon Web Services to save space and allow users to join a chat room with friends and share their songs. I created a way to count plays so everytime some listens to a track the play count increases and those songs are ranked on the chart.</p>
         </div>
     )
 }

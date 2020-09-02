@@ -92,7 +92,7 @@ const MyCarousel2 = (props) => {
        <p>This turned out to not be true, I could never become superman-I was afraid of heights. I still am to this day. One thing I'm not afraid of is problem solving, I think thats what drew me
        drew me to the industry. I built my first computer when i was 8 or 9, before windows, in fact I remember windows 95 and the 30 installation disk it required. 
        </p>
-       <p>Fast Forward to 2015, I had been working in the sales industry-sucessfully I might add- since I had left college when a high school and college friend of mine asked me to help design a website for an idea he had. So I took on the challange and together we hired a company and came up with <a href='https://godigitalvalet.com/admin/'>Digital Valet</a>. The purpose of this application was to digitalize the valet car retrieval process for the Ritz Carlton </p>
+       <p>Fast Forward to 2015, I had been working in the sales industry-sucessfully I might add- since I had left college when a high school and college friend of mine asked me to help design a website for an idea he had. So I took on the challange and together we hired a company and came up with <a href='https://godigitalvalet.com/admin/' target="_blank">Digital Valet</a>. The purpose of this application was to digitalize the valet car retrieval process for the Ritz Carlton </p>
        </aside>
         </div>
     )
