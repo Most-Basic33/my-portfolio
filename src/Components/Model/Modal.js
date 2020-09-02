@@ -18,7 +18,15 @@ const ModalComp = (props) => {
         console.log('welllll')
         setOpen(false)//!open
     }
-
+const customStyles = {
+    content : {
+        // transform : 'translate(-50%, -50%)',
+        backgroundColor: '#fff'
+    },
+    overLay: {
+        backgroundColor: '  #403075'
+    }
+}
     // console.log(props)
     return (
         <div id='modaled'>
@@ -28,15 +36,16 @@ const ModalComp = (props) => {
                 // isOpen={props.id === props.modalOpen}
                 contentLabel='Modaled photos of applications I built'
                  onRequestClose={(e) =>{ close();console.log('hit', e.target)}}
-               
-                style={{
-                    overLay: {
-                        backgroundColor: '#ac6291'
-                    }
-                }}>
+               style={customStyles}
+                // style={{
+                //     overLay: {
+                //         backgroundColor: '#ac6291'
+                //     }
+                // }}
+                >
                
                 <div className='modal'>
-                    <button onClick={(e) =>{console.log('hit', e.target); close() }}>X</button>
+                    {/* <button onClick={(e) =>{console.log('hit', e.target); close() }}>X</button> */}
                     <div className='button-and-image'>
                     <div className='modal-button'>
                     {/* <button onClick={(e)=> props.setModal(-1, e) } >Close</button> */}
