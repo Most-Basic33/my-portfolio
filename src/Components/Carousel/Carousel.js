@@ -29,9 +29,7 @@ const MyCarousel = (props) => {
             <aside className='info'>
 
 
-                <p>
-                    Homefinder was conceived of as a personal project because who doesn't look for a house at some point or another?  I combined several commonly used technologies to build this project. You can Click on the photo's in the carousel to see more about the particular image.
-        </p>
+               
                 <span><b><h2>Tecnologies Used:</h2></b></span>
                 <ul>
                     <li>Chart.Js</li>
@@ -112,8 +110,11 @@ const MyCarousel = (props) => {
 
             </Carousel>
             <div className='bott' >
-                <h2>Click On Images to Find Out More!</h2>
+                <h4>Click On Images to Find Out More!</h4>
             </div>
+            <p>
+                    Homefinder was conceived of as a personal project because who doesn't look for a house at some point or another?  I combined several commonly used technologies to build this project. You can Click on the photo's in the carousel to see more about the particular image.
+        </p>
         </div>
     )
 }

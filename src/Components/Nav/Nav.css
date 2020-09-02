@@ -44,3 +44,27 @@
      flex-direction: column;
      gap:20px;
  }
+
+ @media (max-width: 525px) {
+    .headshot {
+        height: 75px;
+        width: 75px;
+    }
+
+    #middleQ{
+        padding-left: 0px;
+        height: 50%;
+      font-size:20px;
+      width: 50%;
+    }
+
+    .navbutt {
+        font-size:10px;
+    }
+
+    #navbar {
+        position: sticky;
+        float: left;
+        top:0px;
+    }
+ }

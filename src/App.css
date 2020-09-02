@@ -44,7 +44,7 @@ right:0;
   color:white;
   font-size:30px;
 }
-/* @media (max-width:600px){
+@media (max-width:525px){
   .App{
     display: flex;
     flex-direction: column;
@@ -56,4 +56,11 @@ right:0;
     flex-direction: column;
     position: relative;
   }
-} */
+  #vw20{
+    position: sticky;
+    top: 0;
+  }
+  #vw60{
+    overflow: scroll;
+  }
+}

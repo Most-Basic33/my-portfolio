@@ -11,3 +11,8 @@
 ul{
     column-count: 2;
 }
+@media (max-width: 525px) {
+    ul {
+       column-count:1;
+    }
+}

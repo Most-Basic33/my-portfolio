@@ -78,7 +78,7 @@ const MyCarousel1 = (props) => {
 
             </Carousel>
             <div className='bott' >
-                <h2>Click On Images to Find Out More!</h2>
+                <h4>Click On Images to Find Out More!</h4>
             </div>
         </div>
     )
