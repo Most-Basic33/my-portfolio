@@ -15,6 +15,26 @@ const MyCarousel1 = (props) => {
 
     return (
         <div id='carry' >
+         <aside className='info'>
+
+
+               
+<span><b><h2>Tecnologies Used:</h2></b></span>
+<ul>
+    <li>Chart.Js</li>
+    <li>Authentication/Bcrypt</li>
+    <li>Spotify API</li>
+    <li>AWS</li>
+    <li>PostGres SQL</li>
+    <li>Node.Js</li>
+    <li>React-Redux</li>
+    <li>SASS</li>
+    <li>Express-Session</li>
+    <li>React-Audio</li>
+    <li>Socket.IO</li>
+</ul>
+</aside>
+        <p>username/email: <b>jon</b> password: <b>123</b></p>
             <Carousel
                 containerProps={{
                     style: {
@@ -80,6 +100,7 @@ const MyCarousel1 = (props) => {
             <div className='bott' >
                 <h4>Click On Images to Find Out More!</h4>
             </div>
+            <p>This App was conceived of as a group project at DevMountain. My team and I wanted a way for users to be able to share music that they created while using their Spotify profile. My foucus was on the chat, audio, and Data aspects. Users can upload their music to their profiles. I utilized Amazon Web Services to save space and allow users to join a chat room with friends and share their songs. I created a way to count plays so everytime some listens to a track the play count increases and those songs are ranked on the chart.</p>
         </div>
     )
 }

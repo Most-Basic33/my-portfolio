@@ -24,11 +24,14 @@ color:white
 }
 @media (max-width:525px) {
   .modal{
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content:start;
+    width: fit-content;
+
   }
   #pic{
-     width: 300px;
+     width: 80%;
      height: 300px;
    }
    #wrap{

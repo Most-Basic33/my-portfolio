@@ -44,6 +44,7 @@ const MyCarousel = (props) => {
                     <li>React-Router</li>
                 </ul>
             </aside>
+                <span>username: <b>test </b> password: <b>test</b></span>
             <Carousel
                 containerProps={{
                     style: {

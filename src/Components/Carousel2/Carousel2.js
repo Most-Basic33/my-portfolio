@@ -18,6 +18,24 @@ const MyCarousel2 = (props) => {
  
     return (
         <div id='carry' >
+         <aside className='info'>
+
+
+               
+<span><b><h2>Personal Skills:</h2></b></span>
+<ul>
+    <li>DevMountain Grad</li>
+    <li>Senior At U.O.P</li>
+    <li>Front-End</li>
+    <li>Back-End</li>
+    <li>React</li>
+    <li>React Native</li>
+    <li>Java</li>
+    <li>HTML-5</li>
+    <li>Remote</li>
+  
+</ul>
+</aside>
             <Carousel
                 containerProps={{
                     style: {
@@ -82,7 +100,7 @@ const MyCarousel2 = (props) => {
 
             </Carousel>
             <div className='bott' >
-                <h2>Click On Images to Find Out More!</h2>
+                <h4>Click On Images to Find Out More!</h4>
             </div>
         </div>
     )
