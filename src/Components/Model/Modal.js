@@ -16,7 +16,7 @@ const ModalComp = (props) => {
 
     function close() {
         console.log('welllll')
-        setOpen(!open)
+        setOpen(false)
     }
 
     // console.log(props)
@@ -26,6 +26,7 @@ const ModalComp = (props) => {
             <Modal
                 isOpen={open}
                 // isOpen={props.id === props.modalOpen}
+                contentLabel='Modaled photos of applications I built'
                  onRequestClose={(e) =>{ close();console.log('hit', e.target)}}
                 // onRequestClose={()=> props.setModal(0)}
                 style={{
